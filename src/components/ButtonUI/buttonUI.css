@@ -1,0 +1,5 @@
+.button_ui {
+    background: linear-gradient(to right, rgba(102, 0, 255, 1), rgba(163, 88, 232, 1));
+    border: 0;
+    border-radius: 29px;
+}
