@@ -1,0 +1,165 @@
+.header {
+    width: 100vw;
+    height: 70vh;
+    min-height: 680px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg {
+    width: 100%;
+    height: 680px;
+    position: absolute;
+    background: url("../components/Header/bg.svg");
+    background-size: 100% auto;
+}
+
+.header_background {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.navbar {
+    width: 70%;
+    height: 15%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.navbar_menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: calc(12px + 4 * (100vw / 1920));
+    color: white;
+}
+
+.navbar_item_link {
+    cursor: pointer;
+}
+
+.navbar_phone_box {
+    font-weight: 700;
+    font-size: calc(18px + 6 * (100vw / 1920));
+    color: white;
+}
+
+.header_content {
+    width: 79%;
+    height: 85%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header_content_text {
+    display: flex;
+    width: 40%;
+    height: fit-content;
+    align-self: center;
+    font-weight: 700;
+    color: white;
+    flex-direction: column;
+}
+
+.header_title {
+    font-size: calc(20px + 32 * (100vw / 1920));
+    margin-bottom: 5%;
+}
+
+.header_title_spec {
+    color: #6600FF;
+}
+
+.header_explain {
+    font-weight: 400;
+    font-size: calc(14px + 10 * (100vw / 1920));
+    margin-bottom: 20%;
+}
+
+.header_img_box {
+    width: 50%;
+    background-image: url('../assets/device.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 1519px) {
+    .header_explain {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 1469px) {
+    .navbar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1149px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1319px) {
+    .header_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 799px) {
+    .navbar_phone_box, .navbar_item_link, .navbar_menu, .button_ui.nav {
+        display: none;
+    }
+}
+
+
+@media (max-width: 699px) {
+    .header_content {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+    }
+
+    .header_content_text {
+        width: 95%;
+        order: 2;
+    }
+
+    .header_title {
+        font-size: calc(20px + 32 * (100vw / 1920));
+        margin-bottom: 2%;
+    }
+
+    .header_explain {
+        margin-bottom: 5%;
+    }
+
+    .header_img_box {
+        height: 55%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 449px) {
+    .header_content_text {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+}
+
+

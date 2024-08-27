@@ -1,10 +1,12 @@
 import React from 'react';
 import ButtonUI from "../ButtonUI/ButtonUI";
+import Logo from "../../assets/Logo";
 
 const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='logo_box'>
+                <Logo/>
             </div>
 
             <div className='navbar_menu'>
@@ -23,7 +25,7 @@ const Navbar = () => {
                 <span>+7 (343) 311-21-11</span>
             </div>
 
-            <ButtonUI>
+            <ButtonUI adds='nav'>
                 Перезвонить мне
             </ButtonUI>
         </div>

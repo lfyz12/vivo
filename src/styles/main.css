@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    height: 2770px;
+    background: linear-gradient(rgba(41, 41, 41, 1), rgba(60, 60, 60, 1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_background {
+    position: absolute;
+}
+
+.bg_phone {
+    background-image: url("../assets/PhoneForBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -39px;
+    top: 934px;
+    opacity: 50%;
+    transform: rotate(20deg);
+    height: 650px;
+    width: 650px;
+}
+
+@media (max-width: 699px) {
+    .bg_phone {
+        display: none;
+    }
+}

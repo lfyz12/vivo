@@ -1,11 +1,8 @@
 import React from 'react';
 import './buttonUI.css'
-const ButtonUi = ({children}) => {
+const ButtonUi = ({children, adds, action}) => {
     return (
-        <button className='button_ui' style={{
-            height: '60px',
-            width: '280px'
-        }}>
+        <button className={`button_ui ${adds}`} onClick={action}>
             {children}
         </button>
     );

@@ -1,5 +1,45 @@
 .button_ui {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    height: 60px;
+    width: 280px;
     background: linear-gradient(to right, rgba(102, 0, 255, 1), rgba(163, 88, 232, 1));
-    border: 0;
     border-radius: 29px;
+    font-size: calc(14px + 2 * (100vw / 1920));
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+}
+
+.button_ui::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(102, 0, 255, 1), rgba(163, 88, 232, 1));
+    border-radius: 29px;
+    padding: 2px;
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.button_ui.nav {
+    width: 12vw;
+    height: 3vw;
+    min-height: 40px;
+    min-width: 170px;
+    background: -webkit-linear-gradient(91.26deg, #6600FF 0.62%, #A358E8 99.49%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid transparent;
 }
