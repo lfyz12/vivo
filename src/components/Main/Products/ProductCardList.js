@@ -19,7 +19,6 @@ const ProductCardList = () => {
     }, []);
 
     useEffect(() => {
-        console.log('Width changed:', width);
         if (width < 799) {
             setProducts([1, 2, 3, 4]);
         } else {
@@ -31,7 +30,6 @@ const ProductCardList = () => {
         <div className='products_list'>
             {products.map((card, index) =>
             <ProductCard key={index}/>)}
-            <ButtonUI>Показать еще</ButtonUI>
         </div>
     );
 };

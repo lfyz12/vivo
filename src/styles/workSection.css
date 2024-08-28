@@ -21,13 +21,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
+
 
 .work_card {
     width: 20%;
     height: 67%;
-    min-width: 240px;
+    min-width: 230px;
     min-height: 316px;
     position: relative;
 }
@@ -87,6 +87,88 @@
     left: -10px;
 }
 
+.slider {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slider_box {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.arrow {
+    width: 20%;
+    height: 10%;
+    min-width: 210px;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 5%;
+    background: rgba(30, 30, 30, 1);
+}
+
+.slide_count {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.prev, .next {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    margin-left: 2%;
+}
+.next {
+    margin-right: 2%;
+}
+
+@media (max-width: 1249px) {
+    .work_card_list {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 949px) {
+    .work_card_list {
+        width: 100%;
+        height: 100%;
+        margin-left: calc(50% - 150px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .work_card {
+        width: 20%;
+        height: 67%;
+        min-width: 240px;
+        min-height: 316px;
+        margin-right: 15px;
+        opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .work_card.current {
+        opacity: 1;
+    }
+}
 
 
 

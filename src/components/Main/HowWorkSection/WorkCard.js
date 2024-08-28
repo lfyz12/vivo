@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const WorkCard = ({card, index}) => {
+const WorkCard = ({card, index, currentIndex}) => {
     return (
-        <div className='work_card'>
+        <div className={`work_card ${index === currentIndex ? 'current' : ''}`}>
             <div className='work_card_img_box'>
                 {card.image}
             </div>

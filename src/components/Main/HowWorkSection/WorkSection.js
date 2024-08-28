@@ -8,6 +8,7 @@ import CardImg4 from "../../../assets/CardImg4";
 import WorkCardSlider from "./WorkCardSlider";
 const WorkSection = () => {
     const [width, setWidth] = useState(window.innerWidth)
+    const [checkSlide, setCheckSlide] = useState(false)
     const [cards, setCards] = useState([
         {
             image: <CardImg1/>,
@@ -28,24 +29,33 @@ const WorkSection = () => {
     ])
 
     useEffect(() => {
-        function checkSize() {
-            window.addEventListener('resize', () => {
-                setWidth(window.innerWidth)
-            })
-            return width
+        function handleResize() {
+            setWidth(window.innerWidth);
         }
 
-        checkSize()
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (width < 949) {
+            setCheckSlide(true)
+        } else {
+            setCheckSlide(false)
+        }
     }, [width]);
 
 
     return (
         <div className='work_section'>
             <h2 className='work_section_title'>Как мы работаем?</h2>
-            {/*{width < 1299 ?*/}
-            {/*    <WorkCardSlider cards={cards}/> :*/}
+            {checkSlide ?
+                <WorkCardSlider cards={cards}/> :
                 <WorkCardList cards={cards}/>
-            {/*}*/}
+            }
 
 
         </div>
