@@ -43,6 +43,8 @@
 
 .navbar_item_link {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar_phone_box {
@@ -50,6 +52,91 @@
     font-size: calc(18px + 6 * (100vw / 1920));
     color: white;
 }
+
+.burger_menu {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    width: 30px;
+    height: 27px;
+    background-image: url("../assets/burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.burger_phone {
+    display: none;
+    width: 25px;
+    height: 28px;
+    background-image: url("../assets/burgerPhone.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(180deg, #292929, #3C3C3C);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease-in-out; /* Плавность выдвижения */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close_button:hover {
+    transform: rotate(90deg);
+}
+
+.navbar_menu_open {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 700;
+    font-size: calc(12px + 4 * (100vw / 1920));
+    color: white;
+}
+
+.navbar_menu_item_open {
+    margin: 10px 0;
+}
+
+.navbar_item_link_open {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar_phone_box_open {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: calc(18px + 6 * (100vw / 1920));
+    color: white;
+}
+
+
 
 .header_content {
     width: 79%;
@@ -121,6 +208,32 @@
     .navbar_phone_box, .navbar_item_link, .navbar_menu, .button_ui.nav {
         display: none;
     }
+
+    .navbar {
+        background: linear-gradient(to right, #292929, #3C3C3C);
+        box-shadow: 0px 4px 20px 0px #00000033;
+        width: 100%;
+        height: 10%;
+        min-height: 65px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger_menu, .burger_phone {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger_phone {
+        margin-right: 4%;
+    }
+
+    .burger_menu {
+        margin-left: 2%;
+        z-index: 2;
+
+    }
+
 }
 
 

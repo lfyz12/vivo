@@ -1,0 +1,123 @@
+.footer {
+    width: 100%;
+    height: fit-content;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#292929, #3C3C3C);
+    box-shadow: 0 0 60px 0 #06060C80;
+
+}
+
+.copyright {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: calc(10px + 2 * (100vw / 1920));
+    color: #BDBDBD;
+    background: #1E1E1E;
+}
+
+.footer_content {
+    width: 80%;
+    height: 15%;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+
+}
+
+.footer_menu {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: calc(12px + 4 * (100vw / 1920));
+    color: white;
+}
+
+.footer_item_link {
+    cursor: pointer;
+}
+
+.footer_phone_box {
+    font-weight: 700;
+    font-size: calc(18px + 6 * (100vw / 1920));
+    color: white;
+}
+
+.footer_btn_box {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 1469px) {
+    .footer_content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1149px) {
+    .footer_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1099px) {
+    .footer_content {
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer_menu {
+        margin-top: 7%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer_btn_box {
+        margin-top: 7%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 749px) {
+    .footer_content {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer_menu {
+        width: 100%;
+        height: 40%;
+        font-size: 24px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer_btn_box {
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+    }
+}

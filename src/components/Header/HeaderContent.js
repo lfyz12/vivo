@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ButtonUI from "../ButtonUI/ButtonUI";
+import OrderModal from "../Modal/OrderModal";
 
 const HeaderContent = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
     return (
         <section className='header_content'>
             <div className='header_content_text'>
@@ -13,12 +18,13 @@ const HeaderContent = () => {
                     Ремонтируем устройства любой сложности в кратчайшие сроки и с гарантией до 3 месяцев
                 </p>
 
-                <ButtonUI>
+                <ButtonUI action={openModal}>
                     Заказать ремонт
                 </ButtonUI>
             </div>
             <div className='header_img_box'>
             </div>
+            <OrderModal isOpen={isModalOpen} onClose={closeModal}/>
         </section>
     );
 };

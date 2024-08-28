@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ServiceModal from "../../Modal/ServiceModal";
 
-const ServiceCard = () => {
+const ServiceCard = ({open}) => {
+
     return (
-        <div className='service_card'>
+        <div onClick={open} className='service_card'>
             <h4 className='service_card_title'>Замена light сенсора</h4>
             <div className='service_card_infobox'>
                 <span className='service_card_date'>1-3 дня</span>

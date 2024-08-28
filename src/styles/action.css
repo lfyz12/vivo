@@ -1,0 +1,257 @@
+.action_section {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(60, 60, 60, 1), rgba(70, 70, 70, 1));
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.action_bg {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-image: url("../assets/phoneBg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+    left: 1357px;
+    top: -250px;
+    transform: rotate(-15deg);
+}
+
+.action_section_content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.widget_box {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit_widget, .info_widget {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 3%;
+    background-color: rgba(30, 30, 30, 1);
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info_widget {
+    justify-content: flex-start;
+    overflow: visible;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-image: url("../assets/cardBg1.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.info_widget_phone_box {
+    width: 28%;
+    min-width: 190px;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.info_widget_phone {
+    font-weight: 700;
+    font-size: calc(12px + 12 * (100vw / 1920));
+    background: -webkit-linear-gradient(rgba(102, 0, 255, 1), rgba(163, 88, 232, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info_widget_bg {
+    width: 217px;
+    height: 206px;
+    position: absolute;
+    left: 73%;
+    top: 24%;
+    z-index: 1;
+    background-image: url("../assets/brokePhone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-18deg);
+}
+
+
+.widget_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: calc(14px + 24 * (100vw / 1920));
+}
+
+.widget_explain {
+    display: inline-block;
+    width: 60%;
+    font-weight: 600;
+    font-size: calc(12px + 4 * (100vw / 1920));
+}
+
+.widget_link {
+    font-weight: 700;
+    font-size: calc(12px + 6 * (100vw / 1920));
+    background: -webkit-linear-gradient(rgba(102, 0, 255, 1), rgba(163, 88, 232, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.edit_widget_bg {
+    width: 346px;
+    height: 288px;
+    position: absolute;
+    left: 63%;
+    top: 23%;
+    z-index: 0;
+    background-image: url("../assets/mamBoard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-45deg);
+}
+
+.shop_widget {
+    width: 100%;
+    height: 48%;
+    background: rgba(30, 30, 30, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    padding-left: 3%;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.shop_widget_bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    background-image: url("../assets/cardBg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1899px) {
+    .action_bg {
+        display: none;
+    }
+    .info_widget_bg2 {
+        left: 57%;
+    }
+}
+
+@media (max-width: 1599px) {
+    .info_widget_bg {
+        left: 68%;
+    }
+}
+
+@media (max-width: 1299px) {
+
+    .action_section_content {
+        width: 90%;
+    }
+
+    .info_widget_bg {
+        left: 55%;
+    }
+}
+
+@media (max-width: 999px) {
+
+    .action_section_content {
+        width: 99%;
+    }
+
+    .info_widget_bg {
+        left: 45%;
+    }
+}
+
+@media (max-width: 999px) {
+    .action_section {
+        height: 800px;
+    }
+    .action_section_content {
+        width: 90%;
+        height: 100%;
+    }
+
+    .widget_box {
+        flex-direction: column;
+        height: 66%;
+    }
+
+    .edit_widget, .info_widget {
+        width: 100%;
+        height: 48%;
+    }
+
+    .info_widget_bg {
+        left: 75%;
+    }
+
+    .shop_widget {
+        height: 30%;
+    }
+
+}
+
+@media (max-width: 749px) {
+
+    .info_widget_bg {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .info_widget_bg {
+        /*left: 65%;*/
+        width: 162px;
+        height: 162px;
+    }
+}
+
+
+@media (max-width: 499px) {
+
+    .info_widget_bg {
+        left: 60%;
+        width: 150px;
+        height: 150px;
+    }
+}
+

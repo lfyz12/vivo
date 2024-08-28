@@ -1,0 +1,16 @@
+.rule {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    background-color: #1E1E1E;
+}
+
+.rule_text {
+    display: inline-block;
+    width: 80%;
+    margin: 3%;
+    font-weight: 400;
+    font-size: calc(12px + 2 * (100vw / 1920));
+    color: #BDBDBD;
+}

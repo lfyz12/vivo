@@ -1,0 +1,242 @@
+/* Основные стили для модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.modal-container {
+    background: linear-gradient(90deg, #6600FF, #A358E8);
+    border-radius: 15px;
+    position: relative;
+    width: 25%;
+    min-width: 350px;
+    height: 500px;
+    max-width: 90%;
+    box-shadow: 0px 4px 15px 0px #6CD83E40;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-title {
+    display: inline-block;
+    width: 70%;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    display: flex;
+    align-items: center;
+    height: 79%;
+    border-radius: 0 0 15px 15px;
+    background: linear-gradient(#292929, #3C3C3C);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-form.edit {
+    height: 87%;
+}
+
+.modal-label {
+    margin-top: 2%;
+    margin-left: 37px;
+    align-self: flex-start;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+
+.modal-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    background: transparent;
+    color: white;
+}
+
+.modal-serv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 36px;
+    background: #1E1E1E;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.modal-input:hover {
+    border-color: #6600FF;
+}
+
+.modal-input::placeholder {
+    color: #aaa;
+}
+
+.modal-checkbox-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.modal-checkbox {
+    cursor: pointer;
+}
+
+.modal-agreement {
+    color: #aaa;
+}
+
+.modal-agreement a {
+    color: #88f;
+    text-decoration: none;
+}
+
+.modal-submit {
+    padding: 10px;
+    background: linear-gradient(90deg, #8800FF, #00C6FF);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.modal-submit:hover {
+    background: linear-gradient(90deg, #00C6FF, #8800FF);
+}
+
+.open-modal-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.succes {
+    width: 350px;
+    height: 360px;
+    background: linear-gradient(45deg, #292929, #3C3C3C);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.succes_title {
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.succes_img {
+    width: 100px;
+    height: 100px;
+    background-image:url("../assets/succes.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.succes_text {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url("../assets/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.select-box {
+    width: 100%;
+    height: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.technique-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.brand-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.model-model-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+
+.modal-select {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1E1E1E;
+    color: white;
+    font-size: 14px;
+}
+
+.modal-label.select-label {
+    font-weight: 400;
+    font-size: 12px;
+    color: #BDBDBD;
+    margin: 0;
+}
+

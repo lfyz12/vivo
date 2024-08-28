@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.button_ui::before {
+.button_ui.nav::before {
     content: '';
     position: absolute;
     top: 0;
@@ -42,4 +42,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 1px solid transparent;
+}
+
+.button_ui.foot {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
 }
