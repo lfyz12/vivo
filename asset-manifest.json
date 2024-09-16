@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/vivo/static/css/main.95caf516.css",
+    "main.js": "/vivo/static/js/main.648a0d02.js",
+    "static/media/cardBg2.png": "/vivo/static/media/cardBg2.e7c9ffcc433da30e27ce.png",
+    "static/media/phoneBg2.png": "/vivo/static/media/phoneBg2.7e93c98e4090a0f1b445.png",
+    "static/media/mamBoard.png": "/vivo/static/media/mamBoard.dcb96dfa094a941e07e3.png",
+    "static/media/PhoneForBg.png": "/vivo/static/media/PhoneForBg.d7e7f57ba5d77241f278.png",
+    "static/media/PhoneImg.png": "/vivo/static/media/PhoneImg.b2154190932475f1d59b.png",
+    "static/media/device.png": "/vivo/static/media/device.f7ae32a08b74761805d6.png",
+    "static/media/brokePhone.png": "/vivo/static/media/brokePhone.c445293ba5de4a556253.png",
+    "static/media/secondFormBg.svg": "/vivo/static/media/secondFormBg.4450136ec99240410993.svg",
+    "static/media/bg.svg": "/vivo/static/media/bg.d488948fdae072cd9366.svg",
+    "static/media/formBg2.svg": "/vivo/static/media/formBg2.2a62f4d7c390134dd22a.svg",
+    "static/media/formBg.svg": "/vivo/static/media/formBg.aff3540992b0d0ecfd5c.svg",
+    "static/media/person.svg": "/vivo/static/media/person.32d391281a3b86b5200667ffb9e9c8dc.svg",
+    "static/media/cardBg1.svg": "/vivo/static/media/cardBg1.eea31a43b79fafd5137a.svg",
+    "static/media/burgerPhone.svg": "/vivo/static/media/burgerPhone.42865caca5e2c298ba5a.svg",
+    "static/media/succes.svg": "/vivo/static/media/succes.73cd9354f0abb8b8a0b6.svg",
+    "static/media/phoneIcon.svg": "/vivo/static/media/phoneIcon.d0ba3b58d43b3a2b464927623ffd8af6.svg",
+    "static/media/burger.svg": "/vivo/static/media/burger.51a502937b2432be9016.svg",
+    "static/media/close.svg": "/vivo/static/media/close.cc4ef4174ac71ff8ad6b.svg",
+    "static/media/arrow.svg": "/vivo/static/media/arrow.8abb4fd77a639bfb675175fd2767ee4c.svg",
+    "index.html": "/vivo/index.html",
+    "static/media/nextArrow.svg": "/vivo/static/media/nextArrow.9d199a6952843804af3cfc7ee6d4137d.svg",
+    "static/media/backArrow.svg": "/vivo/static/media/backArrow.a1651cfac52a66cee5d99401d6856b53.svg",
+    "main.95caf516.css.map": "/vivo/static/css/main.95caf516.css.map",
+    "main.648a0d02.js.map": "/vivo/static/js/main.648a0d02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95caf516.css",
+    "static/js/main.648a0d02.js"
+  ]
+}
